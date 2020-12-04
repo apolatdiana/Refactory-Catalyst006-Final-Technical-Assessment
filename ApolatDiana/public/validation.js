@@ -71,7 +71,9 @@ const testForm = () => {
     }
 
     if (category.value == 'type') {
-        alert('Please select your resident type');
+        
+        document.getElementById('categoryerror').innerHTML = "Select your Category";
+        document.getElementById('categoryerror').style = "color:red; ";
         category.style.border = '1px solid red';
         return false;
     }else {

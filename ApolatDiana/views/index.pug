@@ -20,7 +20,7 @@ head
         h1.b.text-center Covid-19(Corrona Virus)
         h5.text-center Virus testing Form
     br
-    span#regmessage
+    span#regmessage.p-3.mb-12.bg-success.text-white.text-center
     .form-row
       .col-md-5.mb-3.ml-2
         label(for='validationCustom01') Surname
@@ -71,6 +71,6 @@ head
           option(value="contact") Contact
           option(value="alert") Alert
           option(value="volunteer") Volunteer 
- 
+          span#categoryerror
     button.btn.btn-primary(type='submit' style='float:right') Register
 script(src='validation.js')      
