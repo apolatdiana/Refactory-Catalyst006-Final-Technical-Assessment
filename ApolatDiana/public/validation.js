@@ -37,7 +37,7 @@ const testForm = () => {
         return false;
     };
 
-    let pResisence =  /^([A-Za-z]{1,20})+$/;
+    let pResisence =  /^([A-Za-z]{2,19})+$/;
     
     if (!placeOfResidence.value.match(pResisence)) {
         document.getElementById('residenceerror').innerHTML = "Please Enter place of Residence";
